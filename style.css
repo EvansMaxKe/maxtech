@@ -1,0 +1,638 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:grey;
+    font-family: "Lato", sans-serif,georgia;
+}
+body a{
+    text-decoration :none ;
+}
+nav{
+    background-color:white;
+    display:flex;
+    padding-top:5px;
+}
+body a:hover{
+    background-color:lightblue;
+    color: red;
+    transition: 3s;
+}
+span.side{
+    padding-left: 30px;
+}
+h2 div.icon{
+    width:25px;
+    height: 5px;
+    background-color: black;
+    margin:5px;
+    cursor: pointer;
+}
+.sidenav{
+    height: 100%;
+    width: 0px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+   background-color:#111;
+   overflow-x:hidden;
+   transition: 0.5s;
+   padding-top:60px;
+}
+.sidenav a{
+    text-decoration: none ;
+    padding: 8px 8px 8px 32px;
+    font-size:px;
+    color:orange;
+    display :block;
+    transition :0.3s;
+    margin:5% 0;
+}
+.sidenav a:hover .offcanvas a:focus{
+    background-color : green;
+}
+.sidenav .closebtn{
+    position:absolute;
+    top:0;
+    right :25px;
+    font-size:36px;
+    margin-left:25px;
+}
+.navbrand{
+    display:flex;
+    margin-left:40px;
+}
+.navbrand img{
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.navbrand a {
+    display:inline;
+    padding: 5px;
+    padding-bottom:px;
+    font-size:30px;
+    margin-top:0;
+    font-family :georgia;
+}
+div.profile{
+    padding-left:20px;
+    
+}
+div.menus div.profile img{
+    width: 90px;
+    height: 95px;
+    border-radius:50%;
+    margin:5%;
+    border: 3px solid green;
+    padding : 6px;
+}
+div.bod{
+    position: relative;
+}
+div.dot{
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50%;
+    top:67% ;
+    left: 34.5%;
+    
+}
+.profile .name{
+    color:white;
+    font-size: rem;
+    font-weight:bolder;
+}
+.profile .work{
+    color: skyblue;
+    font-size:0.7rem;
+    font-weight:bold;
+}
+.icons{
+    margin:5px;
+    margin-right: 5px;
+    color: lightblue;
+}
+hr{
+    
+    margin:0 8%;
+    margin-left :32px;
+    margin-right: 30px;
+    background-color: lightblue;
+}
+.bottom{
+    margin-top: 3%;
+}
+.bottom .icons{
+    color: red;
+    font-size:35px;
+}
+
+.mytag{
+    color:white;
+    margin-top:25%;
+    margin-left:5%;
+    color: lightblue;
+}
+div.welc{
+	justify-content: space-between;
+    
+}
+.welc p{
+    display :inline-block;
+    margin:10px 10px;
+	justify-content: space-between;
+    font-weight: bolder;
+	margin: 0 10%;
+}
+div.welc{
+    animation-name: myAnimation;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    position:relative;
+    background: linear-gradient(to right,white, aqua, #000137);
+    font-family:georgia;
+    justify-content:space-between;
+    padding: 5px;
+    height: 40px;
+}
+
+@keyframes myAnimation{
+    0%{
+        color: green;
+        left: 0px;
+    }
+    25%{
+        color: gold;
+        left: 0px;
+    }
+    50%{
+        color: blue;
+        left: 0px;
+    }
+    75%{
+        color: red;
+        left: 0px;
+    }
+    100%{
+        color: white;
+        right:0px;
+    }
+}
+div.home{
+    height:100%;
+    width: 100%;
+    background-color: #000137 ;
+    color: white;
+    padding: 50px 20px 50px 10px;
+}
+div.home div.row{
+    display: flex;
+}
+div.home div.col-4{
+    width:50%;
+    font-size:3rem;
+    color:white;
+    text-align:center;
+}
+div.home div.col-4 h3{
+	padding-top: 50px;
+}
+div.home div.col-4 p{
+    font-size:2rem;
+    padding-top:15px;
+	font-family: cursive;
+	font-weight: 50px;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+    display:inline;
+    border-radius:10px;
+    box-shadow: 3px 3px 5px white;
+}
+.home button{
+    background-color: orange;
+    color: white;
+	font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius:7px;
+    font-family:'Times New Roman', Times, serif;
+    overflow:hidden;
+    width: 25%;
+	height: 50px;
+    margin-left:12%;
+    box-shadow: 2px 2px 2px white;
+}
+
+div.network{
+    background-color: aqua;
+    padding-bottom: 30px;
+}
+h3.heada{
+    font-family:georgia;
+    font-weight:bolder;
+    text-align:center;
+	font-size: 1.5rem;
+    letter-spacing:0.8rem;
+    padding:10px 0;
+}
+div.taska{
+    color: red;
+    background-color:#8d852f;
+    padding:10px 0;
+    margin:3%;
+    overflow:hidden;
+    border-radius:8px;
+    box-shadow:3px 3px 5px black;
+    padding-left: 3px;
+}
+div.taskb{
+    color: white;
+    background-color:green;
+    padding:10px 0;
+    margin:3%;
+    overflow:hidden;
+    border-radius:8px;
+    box-shadow:3px 3px 5px black;
+}
+div.taskb p{
+     color: black;
+     font-size:1rem;
+     padding-top: 5px;
+     line-height: 2rem;
+}
+div.taskc{
+    color: red;
+    background-color:#ff7300;
+    padding:10px 0;
+    margin:3%;
+    overflow:hidden;
+    border-radius:8px;
+    box-shadow:3px 3px 5px black;
+}
+div.taskc p{
+    padding-top: 5px;
+     color: black;
+     font-size:01rem;
+     line-height: 2rem;
+}
+
+div.taska ol.ways{
+    color: white;
+    font-size:1rem;
+    margin-left:3%;
+}
+ul.affiliate{
+    font-size:0.8rem;
+    color: black;
+    margin-left:5%;
+}
+div.network div.row{
+    display:flex;
+    padding: 10px 0;
+}
+.taska,.taskb,.taskc{
+    width: 33.3%;
+}
+
+div.faqs{
+    background-color: white;
+    padding-top:5%;
+    padding-left:5%;
+    padding:5%;
+}
+div.faqs div.row div.col{
+    display:flex;
+    box-shadow: 3px 3px 3px black;
+    border-radius:8px;
+    padding: 5px;
+    margin: 4% 0;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+div.faqs img{
+    width: 15%;
+    height: 20%;
+    border-radius:30%;
+    display: inline-block;
+    padding:4px;
+    border:2px solid green;
+}
+div.meso{
+    padding :30px;
+}
+div.meso h5{
+    font-family:georgia ;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+div.meso h6{
+    color: red;
+    padding-bottom: 10px;
+}
+div.faqs p{
+    font-size:0.7rem;
+    font-style:italic;
+    font-weight:bold;
+   padding-bottom:8px;
+}
+ div.faqs button{
+     background-color :blue;
+     border-radius: 7px;
+     color: white ;
+     margin: 0 5%;
+     border:orange;
+     padding:3px;
+     box-shadow:2px 2px 3px black;
+ }
+div.faqs h3{
+    font-family : georgia;
+    font-size:1rem;
+}
+div.last{
+    background-color:rgba(0, 1, 55,0.9);
+    padding:15px;
+    padding-top: 0;
+    text-align: center;
+    align-items: center;
+    
+}
+div.last div.profile{
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+div.last img{
+    width: 15%;
+    height: 15%;
+    border-radius:50%;
+    border: 4px solid yellow;
+    padding: 6px;
+
+}
+div.status{
+    height: 27px;
+    width: 27px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50%;
+    top:70% ;
+    left: 56.3%;
+    
+}
+div.last div.details{
+    padding-bottom: -20px;
+}
+div.last h5,h6{
+    color: rgb(255, 255, 0);
+    font-weight:bolder;
+    font-size: 1.1rem;
+    font-family : georgia;
+}
+div.last p{
+    color:white;
+}
+div.last button a{
+    text-decoration:none ;
+    
+}
+div.last button.reg{
+    width: 100px;
+    height: 40px;
+    border: 1px solid red;
+    font-family : georgia;
+    color: red;
+    border-radius: 8px;
+    background-color:orange;
+    margin:2% 5%;
+    box-shadow:2px 2px 3px white;
+    
+}
+div.last button.reg a{
+    color:white;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.last button.login{
+    width: 100px;
+    height: 40px;
+    border: 1px solid blue;
+    font-family : georgia;
+    border-radius: 8px;
+    background-color:blue;
+    margin:2% 5%;
+    box-shadow:2px 2px 3px white;
+    
+}
+div.last button.login a{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}div.comment{
+    background-color:white;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+footer {
+    background-color:cyan;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+div.comment textarea{
+    height:50px;
+    width: 60%;    
+    border-radius: 8px;
+    background-color: lightgray;
+    border: 2px solid black;
+    box-shadow:3px 3px 5px black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+div.comment button a{
+    color: white;
+}
+div.comment button{
+    width: 70px;
+    height: 40px;
+    border: 1px solid blue;
+    font-family : georgia;
+    color: white;
+    display:inline-block ;
+    border-radius: 8px;
+    background-color:blue;
+    margin:4%;
+    box-shadow:3px 3px 5px black;
+    border: 1px solid black;
+}
+
+footer div.tag p{
+   color: RED;
+   font-weight: bolder;
+}
+
+
+
+@media (max-width:767.98px) {
+    .welc p{
+        margin: 0 1%;
+        font-weight: normal;
+}
+div.home div.row{
+    display: inline-flex;
+}
+div.home div.col-4{
+    width:50%;
+    font-size:3rem;
+    color:white;
+    text-align:center;
+}
+div.home div.col-4 h3{
+	padding-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+div.home div.col-4 p{
+    font-size:1rem;
+    padding-top:15px;
+	font-family: cursive;
+	font-weight: normal;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+    display:inline;
+    border-radius:10px;
+    box-shadow: 3px 3px 5px white;
+    margin-left: 10px;
+}
+.home button{
+    background-color: orange;
+    color: white;
+	font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius:8px;
+    font-family:'Times New Roman', Times, serif;
+    overflow:hidden;
+    width: 50%;
+	height: 50px;
+    margin-top: 30px;
+    margin-left:12%;
+    box-shadow: 3px 3px 5px white;
+}
+div.taska{
+    line-height: 30px;
+}
+div.faqs img{
+    width: 30%;
+    height: 30%;
+    border-radius:30%;
+    display: inline-block;
+    padding:4px;
+    border:2px solid green;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+div.faqs div.row div.col{
+    display:flex;
+    box-shadow: 3px 3px 3px black;
+    border-radius:8px;
+    border: 1px solid black;
+    padding-left: 1px;
+}
+div.meso{
+    padding :0px;
+}
+div.meso h5{
+    font-family:georgia ;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+div.meso h6{
+    color: red;
+    padding-bottom: 10px;
+}
+div.faqs p{
+    font-size:0.7rem;
+    font-style:italic;
+    font-weight:bold;
+   padding-bottom:8px;
+}
+ div.faqs button{
+     background-color :blue;
+     border-radius: 7px;
+     color: white ;
+     margin: 0 5%;
+     border:orange;
+     padding:3px;
+     box-shadow:2px 2px 3px black;
+ }
+ div.last div.profile{
+    position: relative;
+    margin-bottom: 5px;
+}
+div.last img{
+    width: 33%;
+    height: 33%;
+    border-radius:50%;
+    border: 4px solid yellow;
+    padding: 6px;
+
+}
+div.status{
+    height: 27px;
+    width: 27px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50%;
+    top:70% ;
+    left: 62%;
+    
+}
+div.last div.details{
+    padding-bottom: -20px;
+}
+div.last h5,h6{
+    color: rgb(255, 255, 0);
+    font-weight:bolder;
+    font-size: 1.1rem;
+    font-family : georgia;
+}
+footer {
+    background-color:cyan;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+div.comment textarea{
+    height:50px;
+    width: 70%;    
+    border-radius: 8px;
+    background-color:lightgray;
+    border: 2px solid black;
+    box-shadow:3px 3px 5px black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+footer div.tag p{
+    color: RED;
+    font-weight: bolder;
+    font-size: 0.8rem;
+ }
+ 
+}
